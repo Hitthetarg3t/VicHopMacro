@@ -6,6 +6,7 @@ SendMode "Event"
 
 #Include scripts\paths.ahk
 #Include scripts\libary.ahk
+#Include scripts\planters.ahk
 
 F1:: {
     loop {
@@ -18,6 +19,7 @@ F2:: ExitApp()
 
 
 MainLoop() {
+    StartPlantersLoop()
     JoinServer()
     Send("{PgDn}")
     Send("{PgDn}")
